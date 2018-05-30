@@ -1,1 +1,8 @@
-this is a test
+Two points to mention:
+
+1. For array length, we need use .length attributes
+   For string length, we need use .length() function
+
+2. int / 2 will give the lower bound
+
+3. For recursive, we need to write the condition to exit at first
