@@ -6,3 +6,5 @@ Two points to mention:
 2. int / 2 will give the lower bound
 
 3. For recursive, we need to write the condition to exit at first
+
+4. Solution2 has a clearer and easier code to understand with StringBuilder or StringBuffer
