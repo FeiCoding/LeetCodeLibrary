@@ -1,0 +1,19 @@
+1. Use binary search to find the integer i which is
+
+	i * i < x
+	(i + 1) * (i + 1) > x
+
+2. Starter is 
+
+left = 1  
+right = integer_max_value  
+mid = (left + right) /2
+
+In this condition, we should avoid the exceed problem including:
+
+mid = (left + right) /2  		=>		 mid = left + (right - left) / 2
+
+mid * mid > x 		=>		 mid > x/mid
+
+
+
