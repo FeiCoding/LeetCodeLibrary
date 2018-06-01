@@ -1,0 +1,2 @@
+For Palindrome Problems we should use two pointers to point to the starter and the
+end of the string to check both sides whether equal or not.
