@@ -1,0 +1,18 @@
+1. Firstly, we set a result array to store the product of all the number from left side
+
+	int n = nums.length;
+        int res[] = new int[n];
+        res[0] = 1;
+        for(int i = 1; i < n; i++){
+            res[i] = res[i-1] * nums[i-1];
+        }
+
+
+
+2. Then we set the number start from the right to get the product of all the number from right side
+
+	int right = 1;
+        for(int i = n-1; i >= 0; i--){
+            res[i] = res[i] * right;
+            right *= nums[i];
+        }
