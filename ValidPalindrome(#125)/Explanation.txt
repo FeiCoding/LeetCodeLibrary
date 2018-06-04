@@ -1,0 +1,9 @@
+Idea:
+
+Use bucket to store all the alphabets with 26 slots.
+
+Then go through all the alphabet in the string to check the apperance of each and then plus the number of the 
+
+string.
+
+Then go through the other string to decrease the apperance of each alphabet.
