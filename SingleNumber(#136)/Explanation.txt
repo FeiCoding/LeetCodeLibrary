@@ -4,4 +4,3 @@ The key point here we need to know is
 
 so here we go through the whole array and then compare each number, if the same then res = 0, if not then res = the number
 
-so the last one left is the number we want. 
