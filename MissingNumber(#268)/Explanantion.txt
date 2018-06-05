@@ -1,0 +1,9 @@
+Key Point:
+
+The start value of res must be the length of the array
+
+for(int i = 0; i < nums.length; i ++){
+            res = res ^ i ^ nums[i];
+}
+
+did the XOR manipulation for all the numbers in the array with their indexes 
