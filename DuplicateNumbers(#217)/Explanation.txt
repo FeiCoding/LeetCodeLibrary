@@ -1,0 +1,3 @@
+Here the key point is to use hashset
+
+the time complexity is O(n)
