@@ -1,0 +1,7 @@
+Key Point:
+
+1. Store all the data into a hashmap with key to the number and value to the frequence
+
+2. Use an array of lists to store each number according to their frequence
+
+3. Get the K largest index of the array of lists
