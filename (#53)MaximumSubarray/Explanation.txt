@@ -1,0 +1,7 @@
+dp[i] = A[i] + (dp[i - 1] > 0 ? dp[i - 1] : 0)
+
+This is the most important part of this code.
+
+Here we need to know that if dp[i-1] < 0 then A[i] + dp[i-1] < A[i]
+
+so we just start with A[i] and then keep tracking the array.
