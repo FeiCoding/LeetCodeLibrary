@@ -1,0 +1,14 @@
+Two Key points:
+
+1. 
+	Symbol       Value
+	I             1
+	V             5
+	X             10
+	L             50
+	C             100
+	D             500
+	M             1000
+
+2. 'M' means char !!!!!!!!!!
+	"M" means string
