@@ -1,4 +1,8 @@
-The most important is to think cancel each other out
+Since more than n/2 elements are major elements, major will not be changed once 
+
+it has been found.
+
+So here, the most important is to think cancel each other out
 
 For example: [1, 2, 1, 1, 2, 2, 2]
 
