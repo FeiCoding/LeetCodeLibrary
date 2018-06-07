@@ -1,0 +1,7 @@
+The most important is to think cancel each other out
+
+For example: [1, 2, 1, 1, 2, 2, 2]
+
+We write the code to cancel 1 and 2 each other out then only one 2 left
+
+so the majority Element is 2.
