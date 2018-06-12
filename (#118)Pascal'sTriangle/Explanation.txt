@@ -1,0 +1,14 @@
+1. 
+List<List<Integer>> allList = new ArrayList<List<Integer>>(); is alright
+but List<List<Integer>> allList = new ArrayList<ArrayList<Integer>>(); will get some problems
+
+2.
+Don't focus too much on the previous layer of numbers, 
+
+1,2,1
+
+then we insert 1 to the first position to 1,1,2,1
+
+then 1+2 = 3 to put into the second position to 1,3,2,1
+
+then 2+1 = 3 to put into the third postion to 1,3,3,1
