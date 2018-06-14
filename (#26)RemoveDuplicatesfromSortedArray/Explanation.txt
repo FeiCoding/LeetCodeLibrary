@@ -3,3 +3,14 @@ The difference of j++ from ++j is
 j++ will return j at first and then add up j
 
 ++j will add up j ata first and then return j
+
+a=i++;//将i的值赋值给a，即a=i；然后再执行i=i+1；
+也就是【a=i++;】与【a=i; i=i+1;】等价。
+a=++i;//将i+1的值赋给a,即a=i+1;然后再执行i=i+1；
+也就是【a=++i;】与【a=i+1;i=i+1;】等价。
+
+
+1) 若i是内置的数值类型，两者完全一样
+2) 若i是一些自定义的类，如iterator，++i的效率  > = i++的效率
+
+对于后者推荐都用++i；对于前者，用哪个是程序风格问题，i++的好处是更符合人类思维习惯，++i的好处是每次都用这种形式就不用考虑i的类型。 
