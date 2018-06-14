@@ -1,0 +1,5 @@
+The difference of j++ from ++j is
+
+j++ will return j at first and then add up j
+
+++j will add up j ata first and then return j
