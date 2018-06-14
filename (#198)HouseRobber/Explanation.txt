@@ -1,0 +1,5 @@
+Analysis of this problem:
+
+we can figure out the SubProblem to find out the maximun of (dp[i-1], dp[i-2]+num[i]). if we have 3 nums, [1,4,2], then we just compare (dp[0]+num[2] , dp[1]) which comes to the answer.
+
+dp[i] = Math.max(dp[i-2]+nums[i], dp[i-1]);
