@@ -1,0 +1,3 @@
+Notice that after 2 loops, a will go through List A and List B, b will go through List B and List A. So eventually after 2 loops, a will have moved totally len(A + B) steps, meanwhile, b will have moved totally len(B + A), therefore it's guaranteed that a and b will meet at the end of the second loop, regardless of whether len(A) == len(B) or not. So no flag is needed.
+
+In the case of List A and B having no interactions, a and b will meet at the end of the second loop, when both a and b are equal to null.
