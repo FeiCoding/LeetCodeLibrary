@@ -1,0 +1,3 @@
+while(strs[i].indexOf(pre) != 0)
+
+indexOf(pre) != 0 is due to the reason that we need to find the common prefix
