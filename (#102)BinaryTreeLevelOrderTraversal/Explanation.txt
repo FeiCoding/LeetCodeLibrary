@@ -1,0 +1,5 @@
+Attention:
+
+Queue<TreeNode> queue = new LinkedList<TreeNode>();
+
+Queue here implemented by linked list!!!!
