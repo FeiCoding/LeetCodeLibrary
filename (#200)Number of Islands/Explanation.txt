@@ -1,0 +1,4 @@
+1. The key point here is use recursive method to go through the whole
+matrix and if find island then turn '1' into '0'
+
+2. Then keep checking: up, down, right, left
