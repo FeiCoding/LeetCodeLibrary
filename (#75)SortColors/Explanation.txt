@@ -2,3 +2,8 @@ The key idea is to
 1. sweep all 0s to the left 
 2. and all 2s to the right
 3. then all 1s are left in the middle.
+4. Please mind: 
+
+		for(int i = 0; i <= end; i++)
+
+		here i <= end
