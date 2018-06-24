@@ -1,0 +1,9 @@
+1. start with two largest values, as soon as we find a number bigger than both, while both have been updated, return true.
+
+2. update small if n is smaller than both
+
+3. update big only if greater than small but smaller than big
+
+4. return if you find a number bigger than both
+
+5. flase if cannot find
