@@ -1,0 +1,6 @@
+1.	Use hashmap to store the values and its index in the array
+	
+	Use arraylist to store all the values
+
+
+2. When removing, duplicate the last value to the target value's index in the array list, then remove the last value in the array list
