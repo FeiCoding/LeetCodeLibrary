@@ -1,0 +1,2 @@
+1. set a pointer to store the most left node
+2. use another pointer to move to get each node to set the next point
