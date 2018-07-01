@@ -1,0 +1,7 @@
+1. Since we need to access each NestedInteger at a time, we will use a stack to help.
+
+2. In the constructor, we push all the nestedList into the stack from back to front, so when we pop the stack, it returns the very first element. 
+
+3. Second, in the hasNext() function, we peek the first element in stack currently, and if it is an Integer, we will return true and pop the element. If it is a list, we will further flatten it. 
+
+4. This is iterative version of flatting the nested list. Again, we need to iterate from the back to front of the list.
