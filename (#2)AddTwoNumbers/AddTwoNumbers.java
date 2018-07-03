@@ -19,8 +19,8 @@ class Solution {
             carry /= 10;
             point = point.next;
         }
-        if(carry / 10 == 1)
-            point.next = new ListNode(1);
+        if(carry != 0)
+            point.next = new ListNode(carry);
         return res.next;
     }
 }
