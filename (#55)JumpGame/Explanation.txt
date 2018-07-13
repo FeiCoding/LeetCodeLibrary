@@ -1,0 +1,2 @@
+1. num[i] + i means the longest way it can go from i
+2. Everytime update max to make sure each position can be reach or not
