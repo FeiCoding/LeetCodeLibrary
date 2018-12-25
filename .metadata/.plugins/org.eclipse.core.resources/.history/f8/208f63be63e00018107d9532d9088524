@@ -1,0 +1,41 @@
+
+public class ProducerConsumer {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class Person {
+	private String name;
+	private Object lock = new Object();
+	private int count = 0;
+	private final int MAX_NUM = 5;
+
+	public Person(String name) {
+		this.name = name;
+	}
+
+	public void consume() throws InterruptedException {
+		synchronized (lock) {
+			if (count == 0) {
+				System.out.println("Not enough food");
+				lock.wait();
+			}else{
+				count--;
+				System.out.println(Thread.currentThread().getName() + " cousume 1");
+				lock.notifyAll();
+			}
+		}
+	}
+
+	public void produce() throws InterruptedException{
+		synchronized (lock) {
+			if(count >= MAX_NUM){
+				System.out.println("");
+			}
+		}
+	}
+}

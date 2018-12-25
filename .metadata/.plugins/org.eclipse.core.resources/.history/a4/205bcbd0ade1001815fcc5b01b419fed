@@ -1,0 +1,4 @@
+
+class Box<T extends Comparable<T>> implements Comparable<Box<T>> {
+
+}

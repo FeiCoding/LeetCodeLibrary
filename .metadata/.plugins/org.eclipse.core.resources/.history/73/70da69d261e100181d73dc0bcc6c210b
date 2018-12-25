@@ -1,0 +1,14 @@
+import java.util.*;
+public class Test {
+	public static <K, V> void print(K k, V v){
+		System.out.println(k.getClass().getName());
+		System.out.println(v.getClass().getName());
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		print(new Integer(1), new String("aa"));
+		List<String> ls = new ArrayList<String>();
+		List
+	}
+
+}

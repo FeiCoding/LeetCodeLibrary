@@ -1,0 +1,14 @@
+
+public class TraditionalThread {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Thread t1 = new MyThread("t1", 100);
+		Thread t2 = new MyThread("t2", 500);
+		t1.start();
+		t2.start();
+	}
+
+}
+
+

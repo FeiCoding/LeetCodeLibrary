@@ -1,0 +1,49 @@
+
+public class TraditionalThread {
+	private static Object obj = new Object();
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Thread t1 = new MyThread("t1", 1000);
+		// Thread t2 = new MyThread("t2", 5000);
+		// t1.start();
+		// t2.start();
+		MyThreadInterface demo = new MyThreadInterface(1000);
+		Thread t1 = new AThread("t1");
+		Thread t2 = new AThread("t2");
+		Thread t3 = new AThread("t3");
+		t1.start();
+		t2.start();
+		t3.start();
+		try {
+			System.out.println(Thread.currentThread().getName() + " sleep");
+			Thread.sleep(3000);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		synchronized (obj) {
+			System.out.println(Thread.currentThread().getName() + " Notify all");
+			obj.notifyAll();
+		}
+	}
+
+	static class AThread extends Thread {
+		public AThread(String name) {
+			super(name);
+		}
+
+		public void run() {
+			synchronized (obj) {
+				try {
+					System.out.println(Thread.currentThread().getName() + " Start");
+					obj.wait();
+					System.out.println(Thread.currentThread().getName() + " continue");
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+
+}

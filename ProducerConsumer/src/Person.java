@@ -1,0 +1,37 @@
+class Person {
+	private String name;
+	private Object lock = new Object();
+	private int count = 0;
+	private final int MAX_NUM = 5;
+
+	public Person() {
+
+	}
+
+	public void consume() throws InterruptedException {
+		synchronized (lock) {
+			while (count == 0) {
+				System.out.println("Not enough food");
+				System.out.println(Thread.currentThread().getName() + " start waiting");
+				lock.wait();
+			}
+			count--;
+			System.out.println(Thread.currentThread().getName() + " cousume 1");
+			lock.notifyAll();
+		}
+	}
+
+	public void produce() throws InterruptedException {
+		synchronized (lock) {
+			while (count >= MAX_NUM) {
+				System.out.println("Too many food");
+				System.out.println(Thread.currentThread().getName() + " start waiting");
+				lock.wait();
+			}
+			count++;
+			System.out.println(Thread.currentThread().getName() + " produce 1");
+			lock.notifyAll();
+
+		}
+	}
+}

@@ -1,0 +1,20 @@
+class MyThread extends Thread{
+	private String name;
+	private int count = 0;
+	private int time;
+	public MyThread(String name, int time){
+		this.name = name;
+		this.time = time;
+	}
+	public void run(){
+		while(true){
+			try {
+				Thread.sleep(time);
+				System.out.println("Thread:" + name + " "+ count);
+				count++;
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}

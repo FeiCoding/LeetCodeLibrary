@@ -1,0 +1,38 @@
+import java.util.Objects;
+class Person {
+	private String name;
+	private int age;
+	private int passport;
+	public Person(String name, int age, int passport){
+		this.name = name;
+		this.age = age;
+		this.passport = passport;
+	}
+	public boolean equals(Object obj){
+		// TODO Auto-generated method stub
+		if(obj == this)
+			return true;
+		if(getClass() == obj.getClass()){
+			Person p = (Person) obj;
+			return name == p.getName() &&
+					age == p.getAge() &&
+					passport == p.getPass();
+		}
+		else return false;
+	}
+	
+	public int hashCode(){
+		return Objects.hash(name, age, passport);
+	}
+	
+	public String getName(){
+		return name;
+	}
+	public int getAge(){
+		return age;
+	}
+	public int getPass(){
+		return passport;
+	}
+
+}

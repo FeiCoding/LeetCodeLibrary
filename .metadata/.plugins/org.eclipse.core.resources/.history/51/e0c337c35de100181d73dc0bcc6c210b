@@ -1,0 +1,12 @@
+
+public class Test {
+	public <K, V> void print(K k, V v){
+		System.out.println(v.getClass().getName());
+		System.out.println(v.getClass().getName());
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		print(new Integer(1), new String("aa"));
+	}
+
+}

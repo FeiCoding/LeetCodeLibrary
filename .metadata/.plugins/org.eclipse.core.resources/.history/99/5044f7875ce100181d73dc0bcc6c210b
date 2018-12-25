@@ -1,0 +1,24 @@
+
+class Employer extends Person{
+	private int id;
+	public Employer(String name, int age, int passport, int id){
+		super(name, age, passport);
+		this.id = id;
+	}
+	public int getId(){
+		return id;
+	}
+	
+	public boolean equals(Object obj){
+		if(this == obj) return true;
+		if(obj instanceof Employer){
+			Employer em = (Employer) obj;
+			if(getName() == em.getName() && getAge() == em.getAge() && getPass() == em.getPass() && id == em.getId())
+				return true;
+			else
+				return super.equals(obj);
+		}
+		else return false;
+	}
+	
+}
